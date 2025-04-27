@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#6a8db3" />
+    <meta
+      name="description"
+      content="A safe, confidential space for support and resources"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Privacy-focused meta tags -->
+    <meta name="referrer" content="no-referrer" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- Security headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self';">
+    <title>Supportive Space</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app. This application provides confidential support resources.</noscript>
+    <div id="root"></div>
+    <!-- Quick exit script -->
+    <script>
+      document.addEventListener('keydown', function(e) {
+        // Quick exit on ESC key
+        if (e.key === 'Escape') {
+          window.location.href = 'https://weather.com';
+        }
+      });
+    </script>
+  </body>
+</html> 

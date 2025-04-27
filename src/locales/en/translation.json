@@ -1,0 +1,35 @@
+{
+  "inputToggle": {
+    "text": "Text",
+    "image": "Image",
+    "voice": "Voice",
+    "language": "Language",
+    "selectInputMethod": "Select input method"
+  },
+  "textInput": {
+    "placeholder": "Type your message...",
+    "inputLabel": "Message input",
+    "send": "Send message",
+    "submitHint": "Press {{key}} to submit"
+  },
+  "imageInput": {
+    "selectResponse": "Select an image response",
+    "yes": "Yes",
+    "no": "No",
+    "help": "Help",
+    "happy": "Happy",
+    "sad": "Sad",
+    "confused": "Confused"
+  },
+  "voiceInput": {
+    "speak": "Speak your message",
+    "startRecording": "Start recording",
+    "stopRecording": "Stop recording",
+    "send": "Send",
+    "browserNotSupported": "Speech recognition is not supported in your browser",
+    "notSupported": "Your browser does not support speech recognition"
+  },
+  "languageInput": {
+    "selectLanguage": "Select language"
+  }
+} 

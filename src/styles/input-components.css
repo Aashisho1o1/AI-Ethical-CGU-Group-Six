@@ -1,0 +1,291 @@
+/* Input Toggle Component */
+.input-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.input-toggle-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid #ddd;
+  background: white;
+  cursor: pointer;
+  color: #777;
+  transition: all 0.3s ease;
+  padding: 0;
+}
+
+.input-toggle-button svg {
+  font-size: 36px;
+}
+
+.input-toggle-button.active {
+  border-color: #2a8bf2;
+  color: #2a8bf2;
+  box-shadow: 0 2px 8px rgba(42, 139, 242, 0.3);
+  transform: scale(1.1);
+}
+
+.input-toggle-button:hover {
+  border-color: #2a8bf2;
+  color: #2a8bf2;
+}
+
+/* TextInput Component */
+.text-input {
+  width: 100%;
+}
+
+.text-input-container {
+  display: flex;
+  position: relative;
+}
+
+.text-input-field {
+  width: 100%;
+  padding: 12px;
+  padding-right: 40px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  resize: none;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 1.5;
+  transition: border-color 0.2s ease;
+}
+
+.text-input-field:focus {
+  outline: none;
+  border-color: #2a8bf2;
+  box-shadow: 0 0 0 2px rgba(42, 139, 242, 0.2);
+}
+
+.text-input-submit {
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
+  background-color: #2a8bf2;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.text-input-submit:hover {
+  background-color: #1a7be2;
+}
+
+.text-input-submit:disabled {
+  background-color: #bbb;
+  cursor: not-allowed;
+}
+
+.text-input-hints {
+  text-align: right;
+  font-size: 12px;
+  color: #888;
+  margin-top: 4px;
+}
+
+/* ImageInput Component */
+.image-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.image-input-header h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
+
+.image-response-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.image-response-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.image-response-button:hover {
+  background-color: #f0f8ff;
+  border-color: #2a8bf2;
+}
+
+.image-response-emoji {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.image-response-label {
+  font-size: 12px;
+  text-align: center;
+}
+
+/* VoiceInput Component */
+.voice-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.voice-input-header h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
+
+.voice-input-controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.voice-record-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #2a8bf2;
+  color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 12px;
+}
+
+.voice-record-button.recording {
+  background-color: #f24444;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(242, 68, 68, 0.4); }
+  70% { box-shadow: 0 0 0 10px rgba(242, 68, 68, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(242, 68, 68, 0); }
+}
+
+.voice-record-button svg {
+  margin-right: 8px;
+}
+
+.voice-transcript {
+  width: 100%;
+  margin: 12px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: white;
+  border: 1px solid #ddd;
+}
+
+.voice-transcript p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.voice-submit-button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #2a8bf2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.voice-submit-button:hover {
+  background-color: #1a7be2;
+}
+
+.voice-not-supported {
+  color: #f24444;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 12px;
+}
+
+/* Input Area Container */
+.input-area {
+  padding: 16px;
+  border-top: 1px solid #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Language Input Component */
+.language-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.language-input-header h3 {
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #444;
+  text-align: center;
+}
+
+.language-options-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.language-option-button {
+  padding: 12px 8px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  text-align: center;
+}
+
+.language-option-button:hover {
+  background-color: #f0f8ff;
+  border-color: #2a8bf2;
+  color: #2a8bf2;
+} 
