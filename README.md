@@ -95,3 +95,4 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 - Survivor advocacy organizations who provided guidance
 - Trauma-informed design specialists
 - Open source contributors # AI-Ethical-CGU-Group-Six
+# AI-Ethical-CGU-Group-Six
